@@ -1,0 +1,19 @@
+Schemes:
+a(x)
+b(x)
+c(x)
+d(x)
+e(x)
+
+
+Facts:
+a('a').
+
+Rules:
+a(x) :- b(x).
+c(x) :- b(x).
+d(x) :- a(x).
+e(x) :- b(x).
+
+Queries:
+b('a')?

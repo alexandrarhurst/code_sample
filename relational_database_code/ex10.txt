@@ -1,0 +1,18 @@
+#this tests project and select methods for larger sets of information and repeat queries.
+
+Schemes:
+  one(A)
+  on(A)
+  two(A,B)
+
+Facts:
+  one('alexandra').
+  one('types').
+  on('hi').
+
+Rules:
+one(A) :- on(A).
+Queries:
+  on(Q)?
+  one(Q)?
+

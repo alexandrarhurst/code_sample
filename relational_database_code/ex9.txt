@@ -1,0 +1,18 @@
+#this tests select project and rename as well as nested rules.
+
+Schemes:
+  sch(eme)
+  funo(A)
+  fdos(B,C,D)
+Facts:
+  funo('This is text').
+  fdos('I am writing this','b','c').
+  sch('TESTING').
+Rules:
+  one(f,t) :- stuff(sdfkl,'string stuff',('left'*'right')).
+  two(X,y) :- operator(('Alex and ra'*'R ae')),greenwood('Hurst').
+Queries:
+  funo(X)?
+  fdos(X,'b','c')?
+  sch('TESTING')?
+  

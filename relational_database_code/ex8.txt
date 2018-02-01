@@ -1,0 +1,20 @@
+#this tests running lots of renames
+
+Schemes:
+  sch(eme)
+  one(A,B)
+  two(B,C)
+Facts:
+  sch('This is text').
+  sch('I am writing this').
+  one('Alexandra','Hurst').
+Rules:
+  one(f,t) :- one(t,f).
+  two(X,y) :- two('X').
+Queries:
+  sch(A)?
+  sch(B)?
+  one(W,W)?
+  one(W,X)?
+  two(C,C)?
+  two(A,T)?
